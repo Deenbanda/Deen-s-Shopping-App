@@ -3,9 +3,10 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
-import login from './component/screen/login';
-import signup from './component/screen/signup';
-import carts from './component/screen/carts';
+import login from './screen/login';
+import signup from './screen/signup';
+import carts from './screen/carts';
+import home from './screen/home';
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
           <MainNavigator.Screen name="login" component={login}/>
           <MainNavigator.Screen name="signup" component={signup}/>
           <MainNavigator.Screen name="carts" component={carts}/>
+          <MainNavigator.Screen name="home" component={home}/>
         </MainNavigator.Navigator>
       </NavigationContainer>
     </View>
